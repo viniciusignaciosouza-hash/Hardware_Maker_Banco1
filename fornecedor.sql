@@ -1,0 +1,7 @@
+CREATE TABLE fornecedor (
+    id_fornecedor BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cnpj VARCHAR(18) UNIQUE NOT NULL,
+    contato VARCHAR(255)
+);
+
